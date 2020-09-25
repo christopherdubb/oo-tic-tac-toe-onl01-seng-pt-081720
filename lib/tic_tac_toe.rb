@@ -1,3 +1,16 @@
+├── Gemfile
+├── Gemfile.lock
+├── README.md
+├── bin
+│   └── tictactoe
+├── lib
+│   └── tic_tac_toe.rb
+└── spec
+    ├── 01_tic_tac_toe_spec.rb
+    ├── 02_play_spec.rb
+    ├── 03_cli_spec.rb
+    └── spec_helper.rb
+
 class TicTacToe
 
   def initialize(board = nil)
@@ -73,16 +86,16 @@ class TicTacToe
   end
 
   WIN_COMBINATIONS = [
+  
 
-
-    [0,1,2],
-    [3,4,5],
+    [0,1,2], 
+    [3,4,5], 
     [6,7,8],
-    [0,3,6],
-    [1,4,7],
+    [0,3,6], 
+    [1,4,7], 
     [2,5,8],
-    [0,4,8],
-    [2,4,6]
+    [0,4,8], 
+    [2,4,6] 
   ]
 
   def draw?
@@ -106,3 +119,4 @@ end
 
 game = TicTacToe.new
 game.play
+
